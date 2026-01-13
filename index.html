@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bi bol aluurchin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page1" class="page active">
+        <h1>tuulai</h1>
+        <div class="gift-container" onclick="nextPage(2)">
+            <div class="tap-me">alnaa!</div>
+            <div class="gift-icon">🎁</div>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="card">
+            <div class="snowman">⛄</div>
+            <h2>This gift, something special for you</h2>
+            <button onclick="nextPage(3)">turuugus</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="card grid-page">
+            <h2>tam...</h2>
+           
+            <div class="hearts-grid">
+                <div class="heart-card" onclick="reveal(this, 'nugel')">❤️</div>
+                <div class="heart-card" onclick="reveal(this, 'satan')">❤️</div>
+                <div class="heart-card" onclick="reveal(this, 'burhan')">❤️</div>
+                <div class="heart-card" onclick="reveal(this, 'mongo')">❤️</div>
+                <div class="heart-card" onclick="reveal(this, ' turuugod 🎁')">❤️</div>
+            </div>
+            <button id="finalBtn" style="display:none;" onclick="nextPage(4)">Next ➔</button>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <div class="card">
+            <h2>chono arslan bar </h2>
+            <div class="santa-img">🎅🛷</div>
+            <div class="final-letter">
+                <p>turuu bol burhan.</p>
+                <p>neg udur baavgai baisan.</p>
+                <p>herhen burhan boloh ve.</p>
+                <p>turuug har. ❤️🎄</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
