@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(180deg, #325261 0%, #9b5d5d 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     display: flex;
 }
 
-/* Сыйлық анимациясы */
+
 .gift-icon {
     font-size: 80px;
     cursor: pointer;
@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 
-/* Карта дизайны */
+
 .card {
     background: white;
     width: 320px;
@@ -54,7 +54,7 @@ body {
     background-image: 
         linear-gradient(#f0f0f0 1px, transparent 1px),
         linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
-    background-size: 20px 20px; /* Видеодағы торлы фон */
+    background-size: 20px 20px; 
 }
 
 .snowman, .santa-img {
@@ -71,7 +71,7 @@ button {
     margin-top: 20px;
 }
 
-/* Жүрекшелер кестесі */
+
 .hearts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -93,11 +93,34 @@ button {
 }
 
 .revealed {
-    background: #6a0303;
+    background: hsl(0, 0%, 100%);
     font-size: 16px;
     font-weight: bold;
     color: #333;
 }
+/* ===== FINAL PAGE FIX ===== */
+
+#page4 .card {
+    width: 90%;
+    max-width: 650px;
+    max-height: 90vh;     /* дэлгэцэнд багтана */
+    overflow: hidden;
+}
+
+.final-letter {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+    max-height: 70vh;     /* захидал scroll-той */
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.final-letter p {
+    white-space: pre-line;  /* мөр шилжилтийг хэвээр */
+    margin: 0;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
